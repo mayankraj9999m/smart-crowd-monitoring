@@ -1,0 +1,30 @@
+# Python virtual environments & bytecode
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+wheels_cache/
+
+# Local cache & temporary files
+.csrnet_v2_density_cache/
+batch_test_results/
+.ipynb_checkpoints/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+*.log
+
+# Checkpoints: Deploy only csrnet_v2_pretrained_AB_best.pth
+checkpoints/*
+!checkpoints/csrnet_v2_pretrained_AB_best.pth
+
+# Large training datasets (Keep repository light for GitHub/Streamlit Cloud)
+# Training data is only needed for offline model training
+ShanghaiTech/**/train_data/
+ShanghaiTech/**/*.h5
+
+# Local IDE configuration
+.vscode/
+.idea/
